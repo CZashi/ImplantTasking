@@ -10,8 +10,8 @@ BOOL AsyncDownloadTask( PCHAR Url, LPBYTE *lpBuffer, LPDWORD dwSize ) {
 	}
 
 	pData->hConnectedEvent		 =  CreateEventW( NULL, FALSE, FALSE, NULL );
-    pData->hRequestOpenedEvent	 =  CreateEventW( NULL, FALSE, FALSE, NULL );
-    pData->hRequestCompleteEvent =  CreateEventW( NULL, FALSE, FALSE, NULL );
+        pData->hRequestOpenedEvent	 =  CreateEventW( NULL, FALSE, FALSE, NULL );
+        pData->hRequestCompleteEvent     =  CreateEventW( NULL, FALSE, FALSE, NULL );
 
 	PCHAR  UserAgent  =  (PCHAR)RtlHeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, 1024 );
 	DWORD  dwUserSize =  1024;
